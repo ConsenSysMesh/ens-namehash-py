@@ -1,7 +1,7 @@
 import codecs
 import functools
 
-from sha3 import sha3_256
+from sha3 import keccak_256
 
 
 def is_bytes(value):
@@ -17,7 +17,7 @@ def compose(*functions):
 
 
 def sha3(value):
-    return sha3_256(value).digest()
+    return keccak_256(value).digest()
 
 
 # ensure we have the *correct* sha3 installed (keccak)
