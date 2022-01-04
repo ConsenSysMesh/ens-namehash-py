@@ -13,7 +13,7 @@ long_description = open(os.path.join(DIR, 'README.md')).read()
 
 setup(
     name='ens-namehash',
-    version="1.0.0",
+    version="1.0.1",
     description="""Implementation of the namehash algorithm from EIP137""",
     long_description=long_description,
     author='Piper Merriam',
@@ -22,7 +22,7 @@ setup(
     include_package_data=True,
     py_modules=['namehash'],
     install_requires=[
-        "pysha3>=0.3,<1.0",
+        "pysha3>=1.0.2,<2.0.0",
     ],
     license="MIT",
     zip_safe=False,
